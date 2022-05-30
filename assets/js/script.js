@@ -1,13 +1,17 @@
-let contatore = 0;
+let counter = 0;
 
-function aggiungi() {
- contatore++;
- document.getElementById('number').innerHTML = contatore;
+function addition() {
+ counter++;
+ document.getElementById('number').innerHTML = counter;
 }
 
-function sottrai() {
- if(contatore != 0) {
-  contatore--;
+function subtraction() {
+ if(counter != 0) {
+  counter--;
  }
- document.getElementById('number').innerHTML = contatore;
+ document.getElementById('number').innerHTML = counter;
 }
+
+document.getElementById('plus').addEventListener("click", addition);
+
+document.getElementById('minus').addEventListener('click', subtraction);
